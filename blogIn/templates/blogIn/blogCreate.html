@@ -1,0 +1,36 @@
+{% extends "blogIn/homePage.html" %}
+
+<title>{% block title %}Create Blog{% endblock title %} </title>
+{% block content %}
+<div class="back-button">
+    <a class="backbutton" href="/"><span>&#10153;</span> Back To Blog List</a>
+</div>
+
+<h1 class="form-text">Create New Blog Post</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <div class="form-group">
+        {{form.title.label_tag}}
+        {{form.title}}
+        {{form.title.errors}}
+    </div>
+    <div class="form-group">
+        {{form.content.label_tag}}
+        {{form.content}}
+        {{form.content.errors}}
+    </div>
+    <div class="form-group">
+        {{form.time.label_tag}}
+        {{form.time}}
+        {{form.time.errors}}
+    </div>
+    <div class="btn">
+        <button type="submit" class="create-btn"> Create Blog</button>
+    </div>
+
+    
+</form>
+
+
+{% endblock content %}

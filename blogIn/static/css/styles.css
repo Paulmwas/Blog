@@ -77,5 +77,90 @@ header{
 .blog-list h1{
     font-weight: lighter;
     padding-bottom: 20px;
+}
+.content{
+    background-color: #efbeb2;
+    color: #121111;
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+    height: 85vh;
+}
+.content h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-weight: lighter;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.content p{
+    padding: 40px;
+    font-size: 20px;
+    line-height: 2;
+}
+.content h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-left: 40px;
+}
+.back-button{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.back-button a{ 
+    text-decoration: none;
+    color: #efbeb2; 
+    margin-bottom: 20px; 
+}
+.backbutton span{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
 
+}
+.form-group {
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.form-control {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #efbeb2;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.create-btn{
+    background-color: #451a03;
+    color: #efbeb2;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px #efbeb2 solid;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 40%;
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+}
+.form-text{
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-weight: lighter;
+    font-size: 50px;
+}
+.create-btn:hover{
+    color: #451a03;
+    background-color: #fef3c7;
 }

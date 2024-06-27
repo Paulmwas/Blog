@@ -1,0 +1,12 @@
+{% extends "blogIn/homePage.html" %}
+<title>{% block title %}Delete Blog{% endblock title %} </title>
+{% block content %} 
+<h1>Delete Post</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <h4>Are you sure you want to delete {{blog.title}}</h1>
+    <input type="submit" value="Yes, Delete the blog">
+    <a href="{% url "blogContent" blog.pk %}">No, Cancel</a>
+</form>
+
+{% endblock content %}

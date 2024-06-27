@@ -1,0 +1,14 @@
+{% extends "blogIn/homePage.html" %}
+<title> {% block title %} {{ blogs.title }} {% endblock title %}</title>
+{% block content %}
+<div class="content">
+    <h1>{{blogs.title}}</h1>
+    <p>{{blogs.content}}</p>
+    <h5>Written by {{blogs.author}} in , {{blogs.time}}</h5>
+    <h5><a href="{% url "delete" blogs.pk %}">Delete This Post</a></h5>
+</div>
+ 
+
+
+{% endblock content %}
+ 
